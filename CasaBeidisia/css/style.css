@@ -1,0 +1,381 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to top,rgba(247, 165, 81, 0.5), rgba(255,255,255, 0.5) 85%);
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+main {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+header, #content {
+	display: block;
+	margin: 10px auto;
+	position: relative;
+	width: 100%;
+	clear: both;
+}
+
+.navigation {
+	display: block;
+	position: relative;
+	float: right;
+	margin: 0 0 10px 0;
+}
+
+.logo {
+	position: relative;
+	width: 200px;
+	height: 72px;
+	float: left;
+	background-image: url("../imagenes/logoOriginal.jpg");
+}
+
+.border{
+	margin: 30px auto;
+	height: 100px;
+	width: 80%;	
+}
+
+.text-slider {
+	padding: 0px;
+	margin: 50px auto;
+	height: auto;
+}
+
+.text-slide-item {
+	display: none;
+	height: 150px;
+	text-align: center;
+	vertical-align: -webkit-baseline-middle;
+	margin: 0px auto;
+	position: relative;
+	font-size: 2em;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-name: fading;
+}
+
+@keyframes fading {
+	0% { left: -100%; opacity: 0; }
+	30%, 70% { left: 0%; opacity: 1; }
+	100% { left: 100%; opacity: 0; }
+}
+
+.columns {
+	text-align: center;	
+	display: table-row;
+}
+
+.left-section, .right-section {
+	padding: 0px;
+	display: table-cell;
+    vertical-align: middle;
+	margin: 0px auto;
+	position: relative;
+	width: 49%;
+}
+
+.details {
+	padding: 10px 30px;
+	margin: 0px;
+	text-align: justify;
+	font: 1.1em verdana;
+}
+.parallax{
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 200px;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+		}
+	#bloque-1{ 
+		background-image: url("../imagenes/pool.jpg");
+		
+	}
+	#bloque-2{
+		background-image: url("../imagenes/pool.jpg");
+		
+	}
+	#bloque-3{
+		background-image: url("../imagenes/pool.jpg");
+		
+	}
+
+#pie{
+	margin: 50px 0px 0px;
+	position: relative;	
+	width: 100%;
+	background: #FF5F0F;
+}
+
+#pie p {
+	text-align: center;
+	
+	margin: 0px;
+	margin-top: 10px;
+
+	padding: 10px;
+	font: bold 1em verdana;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.video-container {
+	height: 315px;
+}
+
+
+/*********************************** FEATURES SPECIFIC *******************************/
+
+.features-content h1, .features-content h3 {
+	text-align: center;
+}
+
+.features-content h1 {
+	padding: 5% 0px 5%;
+	font-size: 28px;
+}
+
+.features-content h3 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.features-content ul {
+	list-style: square;
+}
+
+.features-content ul li {
+	margin: 10px 5%;
+	padding-left: 15px;
+}
+
+.features-content p {
+	margin: 0px;
+	font-size: 1.1em;
+}
+
+
+/*************************************************************************************/
+
+
+/****************************** CONTACT SPECIFIC *************************************/
+
+#form-content {
+	width: 100%;
+}
+
+.form-header {
+	padding: 9% 0px 10px;
+	font-size: 28px;
+	text-align: center;
+}
+
+.email-form{
+	background: #FA9F4A;
+	padding: 20px 0px;
+	display: block;
+	width: 50%; 
+	margin: 0px auto 250px;
+	border-radius: 10px;
+}
+
+input, textarea {
+	background-color: #E6E5E5;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: 2px;
+	font-family: sans-serif;
+
+
+	display: block;
+	width: 90%; 
+	margin: 10px auto;
+	
+}
+
+textarea {
+	min-height: 100px;
+	max-height: 200px;
+}
+
+input[type="submit"]{
+	background-color: #31384A;
+	color: white;
+	height: 50px;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	background: #939191;
+}
+
+/*************************************************************************************/
+
+
+/******************************** GALLERY **************************************/
+
+.gallery-content {
+	text-align: center;
+}
+
+.gallery-content h2 {
+	display: block;
+	width: auto;
+	margin: 0px auto;
+}
+
+.gallery-content h2 {
+	text-align: center;
+	padding: 5% 0px 0px;
+	font-size: 28px;
+}
+
+.slideshow-container img {
+	width: 100%;
+	height: 500px;
+}
+
+.prev {
+	left: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.slideshow-container img {
+		width: 100%;
+		height: 400px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.slideshow-container img {
+		width: 100%;
+		height: 300px;
+	}
+}
+@media screen and (max-width: 480Px) {
+	.slideshow-container img {
+		width: 100%;
+		height: 200px;
+	}
+}
+
+/*************************************************************************************/
+
+
+/***************************** LOCATION SPECIFIC ************************************/
+
+.map div {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.location-details h2 {
+	text-align: center;
+	padding: 5%;
+	font: bold 26px verdana;
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+.location-details p {
+	text-align: justify;
+	font-size: 22px;
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+
+/*************************************************************************************/
+
+
+/*********************** RESPONSIVIDAD DEBAJO DE 1000 PIXELES ************************/
+
+
+@media screen and (max-width: 1100px) {
+	main {
+		width: 95%;
+		margin: 0px auto;
+	}
+	
+	#slider_container {
+		height: 400px;
+	}
+
+	.left-section, .right-section {
+		display: block;
+		margin: 0px auto;
+		position: relative;
+		width: 100%;
+	}
+
+	.video-container {
+		height: 450px;
+		width: 80%;
+		margin: 10px auto;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	.logo {
+		float: none;	
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	.navigation {
+		float: none;	
+		margin: 0px auto 10px;
+		text-align: center;
+	}
+
+}
+
+
+@media screen and (max-width: 800px){
+	#slider_container {
+		width: 90%;
+		height: 300px;
+	}
+
+	.video-container {
+		height: 300px;
+		width: 80%;
+		margin: 10px auto;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	#slider_container {
+		width: 85%;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#slider_container {
+		width: 80%;
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 375px){
+	#slider_container {
+		height: 130px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	#slider_container {
+		height: 100px;
+	}
+}

@@ -1,0 +1,142 @@
+
+#slider_container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    box-shadow: 1px 20px 27px -21px #000000;
+	border: 2px solid #ececec;
+	margin: 0px auto;
+	overflow: hidden;
+	display: block;
+}
+
+#slider_container li{
+	width: 100%;
+	list-style: none;
+}
+#slider_container img{
+	width:100%;
+	border-radius: 5px;
+	box-shadow:10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+#slider_container li{
+	position: absolute;
+}
+
+
+#slider_container li.slide1{
+	z-index: 10;
+	-webkit-animation: slider1 50s linear 5s infinite normal
+}
+@-webkit-keyframes slider1{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+
+
+#slider_container li.slide2{
+	z-index: 9;
+	-webkit-animation: slider2 50s linear 10s infinite normal
+}
+@-webkit-keyframes slider2{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+
+
+#slider_container li.slide3{
+	z-index: 8;
+	-webkit-animation: slider3 50s linear 15s infinite normal
+}
+@-webkit-keyframes slider3{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+
+
+#slider_container li.slide4{
+	z-index: 7;
+	-webkit-animation: slider4 50s linear 20s infinite normal
+}
+@-webkit-keyframes slider4{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+
+
+#slider_container li.slide5{
+	z-index: 6;
+	-webkit-animation: slider5 50s linear 25s infinite normal
+}
+@-webkit-keyframes slider5{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+#slider_container li.slide6{
+	z-index: 5;
+	-webkit-animation: slider6 50s linear 30s infinite normal
+}
+@-webkit-keyframes slider6{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+#slider_container li.slide7{
+	z-index: 4;
+	-webkit-animation: slider7 50s linear 35s infinite normal
+}
+@-webkit-keyframes slider7{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+
+
+#slider_container li.slide8{
+	z-index: 3;
+	-webkit-animation: slider8 50s linear 40s infinite normal
+}
+@-webkit-keyframes slider8{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+#slider_container li.slide9{
+	z-index: 2;
+	-webkit-animation: slider9 50s linear 45s infinite normal
+}
+@-webkit-keyframes slider9{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+#slider_container li.slide10{
+	z-index: 1;
+	-webkit-animation: slider10 50s linear 50s infinite normal
+}
+@-webkit-keyframes slider10{
+	0%{opacity:1}
+	5%{opacity:0}
+	85%{opacity:0}
+	95%{opacity:1}
+}
+
+#slider_container img{
+	width:100%;
+	border-radius: 5px;
+	box-shadow:10px 10px 5px rgba(0, 0, 0, 0.5);
+}

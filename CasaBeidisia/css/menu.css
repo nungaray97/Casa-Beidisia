@@ -1,0 +1,95 @@
+.navigation a {
+    margin: 10px 0px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+    
+	padding: 12px 20px 12px 20px;
+    border-bottom: 1px solid transparent;
+    
+    transition: border-bottom .7s;
+	-webkit-transition:border-bottom .7s;
+	-moz-transition:border-bottom .7s;
+	-o-transition:border-bottom .7s;
+}
+
+
+.navigation a:hover, a.active {
+    border-bottom: 1px solid #f7a551;
+}
+
+a.icon {
+    font-size: 26px;
+    display: none;
+}
+
+
+/*------------------Estilos responsive------------------*/ 
+
+/*When the screen is less than 600 pixels wide, 
+hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon)*/
+@media screen and (max-width: 640px) {
+
+    .navigation a{
+        display: none;
+    }
+
+    .navigation a.icon {
+        display: inline-block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+
+@media screen and (max-width: 640px){
+    .navigation.responsive {
+        position: relative;
+    }
+
+    .navigation.responsive a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        transition: height 1s linear;
+    }
+
+	.navigation a {
+        width: 100%;
+        margin: 0px;
+        padding: 10px 0px;
+        border: none;
+    }
+    
+    /*EFECTO HOVER DE LINKS EN MENU RESPONSIVO*/
+    .navigation a:hover:not(.icon){
+        border: none;
+        background-color: #f8b571;
+        transition: none;
+    }
+
+    .navigation a.icon:hover {
+        border: none;
+        transition: none;
+        background-color: none;
+    }
+
+    .navigation a:active:not(.icon) {
+        background-color: #f7a551;
+    }
+
+    a.active {
+        background-color: #f7a551;
+    }
+
+	#slider_container {
+		width: 85%;
+		height: 200px;
+	}
+}

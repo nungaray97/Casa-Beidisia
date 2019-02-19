@@ -1,0 +1,4 @@
+# Custom Legacy PHP 5.3 handler placed by host
+    AddType application/x-httpd-php53 .php5 .php4 .php .php3 .php2 .phtml
+suPHP_ConfigPath /usr/local/lib/php53.ini
+# End Custom Legacy PHP 5.3 handler placed by host
